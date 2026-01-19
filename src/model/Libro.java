@@ -11,6 +11,9 @@ public class Libro {
         this.reservasActivas = 0;
     }
 
+    public void setReservasActivas(int reservasActivas) {
+        this.reservasActivas = reservasActivas;
+    }
     public String getIsbn() {
         return isbn;
     }

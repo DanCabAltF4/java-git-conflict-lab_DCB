@@ -22,7 +22,7 @@ public class BibliotecaService {
             return;
         }
 
-        libro.setDisponible(false);
+        libro.setReservasActivas(0);
         reservas.add(new Reserva(usuario, libro));
         System.out.println("Reserva realizada correctamente");
     }
