@@ -140,16 +140,16 @@ public class Main {
     }
 
     private static Usuario leerUsuario(Scanner sc) {
-        System.out.print("ID usuario: ");
-        int id;
+        System.out.print("email usuario: ");
+        String email;
         try {
-            id = Integer.parseInt(sc.nextLine().trim());
+            email = sc.nextLine();
         } catch (NumberFormatException e) {
-            System.out.println("ID inválido. Se usará 0.");
-            id = 0;
+            System.out.println("email inválido. Se usará ejemplo@email.es");
+            email = "ejemplo@email.es";
         }
         System.out.print("Nombre del usuario: ");
         String nombre = sc.nextLine().trim();
-        return new Usuario(id, nombre);
+        return new Usuario(email, nombre);
     }
 }
