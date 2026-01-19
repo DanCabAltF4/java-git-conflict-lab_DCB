@@ -69,8 +69,8 @@ public class Main {
                 case "6": // Reservar libro
                     Usuario usuarioRes = leerUsuario(sc);
                     Libro libroRes = leerLibroBasico(sc);
-                    biblioteca.reservarLibro(usuarioRes, libroRes);
-                    System.out.println("✔ Reserva registrada (si procede).");
+                    boolean registrado = biblioteca.reservarLibro(usuarioRes, libroRes);
+                    System.out.println(registrado ? "✔ Reserva registrada": "Reserva Fallida");
                     break;
 
                 case "7": // Listar reservas
