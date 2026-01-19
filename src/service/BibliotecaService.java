@@ -3,7 +3,6 @@ package service;
 import model.Libro;
 import model.Reserva;
 import model.Usuario;
-import util.Validador;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,7 @@ public class BibliotecaService {
     private List<Reserva> reservas = new ArrayList<>();
 
     public void reservarLibro(Usuario usuario, Libro libro) {
-        if (!Validador.validarUsuario(usuario)) {
+        if (validarUsuario(usuario)) {
             System.out.println("Usuario no válido");
             return;
         }
