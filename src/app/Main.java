@@ -22,43 +22,48 @@ public class Main {
 
             switch (op) {
                 case "1": // Agregar libro
-                    Libro nuevo = leerLibro(sc);
-                    biblioteca.agregarLibro(nuevo);
-                    System.out.println("✔ Libro agregado.");
+//                    Libro nuevo = leerLibro(sc);
+//                    biblioteca.agregarLibro(nuevo);
+//                    System.out.println("✔ Libro agregado.");
+                    System.out.println("Opcion no implementada");
                     break;
 
                 case "2": // Eliminar libro
-                    System.out.print("ISBN a eliminar: ");
-                    String isbnEliminar = sc.nextLine().trim();
-                    boolean eliminado = biblioteca.eliminarLibro(isbnEliminar);
-                    System.out.println(eliminado ? "✔ Eliminado" : "✖ No encontrado");
+//                    System.out.print("ISBN a eliminar: ");
+//                    String isbnEliminar = sc.nextLine().trim();
+//                    boolean eliminado = biblioteca.eliminarLibro(isbnEliminar);
+//                    System.out.println(eliminado ? "✔ Eliminado" : "✖ No encontrado");
+                    System.out.println("Opcion no implementada");
                     break;
 
                 case "3": // Buscar por ISBN
-                    System.out.print("ISBN a buscar: ");
-                    String isbnBuscar = sc.nextLine().trim();
-                    Libro encontrado = biblioteca.buscarPorIsbn(isbnBuscar);
-                    System.out.println(encontrado != null ? encontrado : "✖ No encontrado");
+//                    System.out.print("ISBN a buscar: ");
+//                    String isbnBuscar = sc.nextLine().trim();
+//                    Libro encontrado = biblioteca.buscarPorIsbn(isbnBuscar);
+//                    System.out.println(encontrado != null ? encontrado : "✖ No encontrado");
+                    System.out.println("Opcion no implementada");
                     break;
 
                 case "4": // Buscar por título
-                    System.out.print("Texto del título: ");
-                    String texto = sc.nextLine().trim();
-                    List<Libro> resultados = biblioteca.buscarPorTitulo(texto);
-                    if (resultados == null || resultados.isEmpty()) {
-                        System.out.println("✖ Sin coincidencias");
-                    } else {
-                        resultados.forEach(System.out::println);
-                    }
+//                    System.out.print("Texto del título: ");
+//                    String texto = sc.nextLine().trim();
+//                    List<Libro> resultados = biblioteca.buscarPorTitulo(texto);
+//                    if (resultados == null || resultados.isEmpty()) {
+//                        System.out.println("✖ Sin coincidencias");
+//                    } else {
+//                        resultados.forEach(System.out::println);
+//                    }
+                    System.out.println("Opcion no implementada");
                     break;
 
                 case "5": // Listar catálogo
-                    List<Libro> catalogo = biblioteca.listarCatalogo();
-                    if (catalogo == null || catalogo.isEmpty()) {
-                        System.out.println("✖ Catálogo vacío");
-                    } else {
-                        catalogo.forEach(System.out::println);
-                    }
+//                    List<Libro> catalogo = biblioteca.listarCatalogo();
+//                    if (catalogo == null || catalogo.isEmpty()) {
+//                        System.out.println("✖ Catálogo vacío");
+//                    } else {
+//                        catalogo.forEach(System.out::println);
+//                    }
+                    System.out.println("Opcion no implementada");
                     break;
 
                 case "6": // Reservar libro
@@ -73,18 +78,20 @@ public class Main {
                     break;
 
                 case "8": // Prestar libro
-                    Usuario usuarioPrest = leerUsuario(sc);
-                    System.out.print("ISBN a prestar: ");
-                    String isbnPrest = sc.nextLine().trim();
-                    boolean prestado = biblioteca.prestarLibro(usuarioPrest, isbnPrest);
-                    System.out.println(prestado ? "✔ Prestado" : "✖ No disponible o no encontrado");
+//                    Usuario usuarioPrest = leerUsuario(sc);
+//                    System.out.print("ISBN a prestar: ");
+//                    String isbnPrest = sc.nextLine().trim();
+//                    boolean prestado = biblioteca.prestarLibro(usuarioPrest, isbnPrest);
+//                    System.out.println(prestado ? "✔ Prestado" : "✖ No disponible o no encontrado");
+                    System.out.println("Opcion no implementada");
                     break;
 
                 case "9": // Devolver libro
-                    System.out.print("ISBN a devolver: ");
-                    String isbnDev = sc.nextLine().trim();
-                    boolean devuelto = biblioteca.devolverLibro(isbnDev);
-                    System.out.println(devuelto ? "✔ Devuelto" : "✖ No encontrado o no estaba prestado");
+//                    System.out.print("ISBN a devolver: ");
+//                    String isbnDev = sc.nextLine().trim();
+//                    boolean devuelto = biblioteca.devolverLibro(isbnDev);
+//                    System.out.println(devuelto ? "✔ Devuelto" : "✖ No encontrado o no estaba prestado");
+                    System.out.println("Opcion no implementada");
                     break;
 
                 case "0":
